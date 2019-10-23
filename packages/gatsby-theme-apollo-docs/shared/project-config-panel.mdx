@@ -24,15 +24,15 @@ npm install --global apollo
 </ExpansionPanelListItem>
 <ExpansionPanelListItem number="2">
 
-<h4>Get your Engine API key</h4>
+<h4>Get your Graph Manager API key</h4>
 
-To get an API key, you will need to [log in to Engine](https://engine.apollographql.com) and create a new service by clicking the "Add Service" button. If you already have a service, get your API key by visiting your service's settings page. Once you have your API key, add it to your `.env` file like so:
+To get an API key, you will need to [log in to Graph Manager](https://engine.apollographql.com) and create a new graph by clicking the "New Graph" button. If you already have a graph, get your API key by visiting your graph's settings page. Once you have your API key, add it to your `.env` file like so:
 
 ```
 ENGINE_API_KEY=service:foobar:d1rzyrmanmrZXxTTQLxghX
 ```
 
-The Apollo CLI will be looking for your `.env` file because it uses your Engine API key to authenticate with the schema registry when it pushes your schema.
+The Apollo CLI will be looking for your `.env` file because it uses your Graph Manager API key to authenticate with the schema registry when it pushes your schema.
 
 **Note:** Make sure your `.env` file is in the root of your project so the Apollo CLI knows where to find it. You can also export `ENGINE_API_KEY` as an environment variable.
 
@@ -56,7 +56,7 @@ module.exports = {
 };
 ```
 
-The [Apollo config documentation](/references/apollo-config/#clientservice) has more details and advanced configuration options for the `apollo.config.js` format.
+The [Apollo config documentation](https://www.apollographql.com/docs/references/apollo-config/#clientservice) has more details and advanced configuration options for the `apollo.config.js` format.
 
 </ExpansionPanelListItem>
 <ExpansionPanelListItem number="check">
